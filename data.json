@@ -1,0 +1,34 @@
+{ 
+    "questions": [
+        {
+            "id": 1,
+            "question": "What was worth more in 2016?",
+            "answer": "a rock",
+            "fact": "In 2016 the worlds largest Jade was discovered, worth £145 MILLION. The Rock only earnt $64.5 MILLION in 2016",
+            "image": "/public/jade.jpg"
+        },
+        {
+            "id": 2,
+            "question": "I was in the movie Jumanji: Welcome to the Jungle and did't take a Salary." ,
+            "answer": "a rock",
+            "fact":"The Jaguar's Eye is a large emerald who serves an important role in Jumanji, movies and video games alike. According to the legend removing the Jaguar's Eye will emit a curse upon Jumanji. It's special skills are zoology mind control, transportation, lighting torches and creating thunderstorms. Pretty impressive for a rock." ,
+            "image": "/pubic/jaguareseye.jpg"
+        },
+
+        {
+            "id": 3,
+            "question": ,
+            "answer": ,
+            "fact": ,
+            "image": 
+        },
+
+        {
+            "id": 4,
+            "question": ,
+            "answer": ,
+            "fact": ,
+            "image": 
+        }
+    ]
+}
