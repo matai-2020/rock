@@ -8,8 +8,12 @@ const filePath = path.join(__dirname, 'data.json')
 const server = express()
 module.exports = server
 
-server.engine('hbs', hbs({ extname: 'hbs' }))
-server.set('view engine')
+server.engine('hbs', hbs({
+  extname: 'hbs',
+  defaultLayout: 'main'
+}))
+
+server.set('view engine', 'hbs')
 
 server.use(express.urlencoded({
   extended: false
@@ -20,4 +24,3 @@ server.use(express.static(staticFolder))
 
 server.use('/', routes)
 server.use('/question/:id', routes)
-

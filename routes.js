@@ -17,7 +17,7 @@ router.get('/question/:id', (req, res) => {
   // readfile
 
   fs.readFile(filePath, (err, contents) => {
-    let choice = setChoice()
+    // let choice = setChoice()
     if (err) return res.send(500)
     let rockData = JSON.parse(contents)
     if (rockData.questions[id - 1].answer === setChoice()) {
