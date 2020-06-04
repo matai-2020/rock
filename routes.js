@@ -17,10 +17,10 @@ router.get('/question/:id', (req, res) => {
   // readfile
 
   fs.readFile(filePath, (err, contents) => {
-    let choice = setChoice(strArg)
+    let choice = setChoice()
     if (err) return res.send(500)
     let rockData = JSON.parse(contents)
-    if (rockData.questions[id - 1].answer === choice) {
+    if (rockData.questions[id - 1].answer === setChoice()) {
       res.render('/right/:id', rockData)
     } else {
       res.render('/wrong/:id', rockData)
@@ -34,7 +34,7 @@ router.get('/question/:id', (req, res) => {
   // render wrong/id
 })
 
-function setChoice (straArg) {
+function setChoice (strArg) {
   console.log('click passed')
   return strArg
 }

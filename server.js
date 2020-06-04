@@ -19,4 +19,5 @@ const staticFolder = path.join(__dirname, 'public')
 server.use(express.static(staticFolder))
 
 server.use('/', routes)
+server.use('/question/:id', routes)
 
