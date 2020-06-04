@@ -4,31 +4,43 @@
             "id": 1,
             "question": "What was worth more in 2016?",
             "answer": "a rock",
-            "fact": "In 2016 the worlds largest Jade was discovered, worth £145 MILLION. The Rock only earnt $64.5 MILLION in 2016",
-            "image": "/public/jade.jpg"
+            "fact1": "In 2016 the worlds largest Jade was discovered, worth £145 MILLION. The Rock only earnt $64.5 MILLION in 2016",
+            "fact0" :"blah about Dwayne Johnson",
+            "image0": "/public/jade.jpg",
+            "image1": "/public/plane.jpg"
+
         },
         {
             "id": 2,
             "question": "I was in the movie Jumanji: Welcome to the Jungle and did't take a Salary." ,
             "answer": "a rock",
-            "fact":"The Jaguar's Eye is a large emerald who serves an important role in Jumanji, movies and video games alike. According to the legend removing the Jaguar's Eye will emit a curse upon Jumanji. It's special skills are zoology mind control, transportation, lighting torches and creating thunderstorms. Pretty impressive for a rock." ,
-            "image": "/pubic/jaguareseye.jpg"
+            "fact1":"The Jaguar's Eye is a large emerald who serves an important role in Jumanji, movies and video games alike. According to the legend removing the Jaguar's Eye will emit a curse upon Jumanji. It's special skills are zoology mind control, transportation, lighting torches and creating thunderstorms. Pretty impressive for a rock." ,
+            "fact0" :"blah blah about Dwayne Johnson",
+            "image1": "/public/jumanji.jpg",
+            "image0": "/pubic/jaguareseye.jpg"
         },
 
         {
             "id": 3,
-            "question": ,
-            "answer": ,
-            "fact": ,
-            "image": 
+            "question": "Which rock hurts the most if it fell on you?",
+            "answer": "the rock",
+            "fact1": "If the rock does this to you, you die",
+            "fact0": "A team of German and Lebanese archeologists just uncovered the largest manmade stone block ever discovered. The block, which was found in a 
+            limestone quarry in Baalbek, Lebanon, measures 64 feet by 19.6 feet by 18 feet, Gizmodo reports, and weighs an estimated 1,650 tons. Other massive manmade 
+            blocks were previously found nearby, including one weighing up to 1,240 tons and nicknamed 'The Stone of the Pregnant Woman.' ",
+            "image1": "/public/IYH_RockBottom.jpg",
+            "image0": "/public/bigrock.jpg"
         },
 
         {
             "id": 4,
-            "question": ,
-            "answer": ,
-            "fact": ,
-            "image": 
+            "question": "What rock is sometimes found in New Zealand?",
+            "answer": "the rock",
+            "fact1": "Dwayne briefly lived in Auckland, going to Richmond Rd primary school",
+            "fact0": "Situated along Iceland’s south coast, Eldhraun is the largest lava flow in the world. What more needs to be said about why this is a definite must-visit attraction? Created during the Laki eruption in the late 18th century, the enormous 565-square-kilometer site is of both historic and geologic importance as well as being a place to explore the persistence of Icelandic flora and fauna. It is also the place where the Apollo 11 crew trained for their impending moonwalk in 1969 for its similarity to the surface of the moon.",
+            "image1": "/public/child.jpg",
+            "image0": "/public/eldhraun.jpg"
+
         }
     ]
 }
