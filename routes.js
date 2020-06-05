@@ -7,7 +7,7 @@ const fs = require('fs')
 module.exports = router
 
 router.get('/', (req, res) => {
-  res.send('hello world')
+  res.render('home')
 })
 
 router.get('/question/:id', (req, res) => {
