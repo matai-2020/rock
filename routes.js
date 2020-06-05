@@ -26,6 +26,17 @@ router.get('/question/:id', (req, res) => {
       res.render('/wrong/:id', rockData)
     }
   })
+})
+
+router.get('/right/:id', (req, res) => {
+  const filePath = path.join(__dirname, ('data.json'))
+  fs.readFile(filePath, (err, contents) => {
+    if (err) return res.sendStatus(500)
+    const answer = JSON.parse(contents)
+    const nextid = Number(req.params.id +1)
+    const viewData = { answer: answer , nextid}
+    res.render('answer1', viewData)
+  })
 
   // link data,json
 
@@ -41,4 +52,14 @@ function setChoice (straArg) {
 // function setRandom () {
 //   let result = Math.floor(Math.random() * Math.floor(5))
 //   return result
+// }
+
+// route /:id
+// get whatever data is displayed on view - already written
+// use req.params.id then plus 1 on that id
+// build viewdata object that includes readfile data AND the "next id"
+// e.g const viewData = {
+// contents:contents
+// nextId: nextId (the req.params.id +1 thing)
+//
 // }

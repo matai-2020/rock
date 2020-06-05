@@ -9,7 +9,7 @@ const server = express()
 module.exports = server
 
 server.engine('hbs', hbs({ extname: 'hbs' }))
-server.set('view engine')
+server.set('view engine', 'hbs')
 
 server.use(express.urlencoded({
   extended: false
@@ -19,4 +19,6 @@ const staticFolder = path.join(__dirname, 'public')
 server.use(express.static(staticFolder))
 
 server.use('/', routes)
+server.use('/right/:id', routes)
+server.use('/wrong/:id', routes)
 
