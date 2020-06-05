@@ -8,7 +8,9 @@ const filePath = path.join(__dirname, 'data.json')
 const server = express()
 module.exports = server
 
+
 server.engine('hbs', hbs({ extname: 'hbs' }))
+
 
 server.set('view engine', 'hbs')
 
