@@ -25,19 +25,27 @@ router.get('/question/:id', (req, res) => {
 })
 
 router.get('/answer/:id/:answer', (req, res) => {
-  const filePath = path.join(__dirname, ('data.json'))
   fs.readFile(filePath, (err, contents) => {
     if (err) return res.sendStatus(500)
     const id = Number(req.params.id)
     const data = JSON.parse(contents)
-    const question = data.questions.find(element => element.id === id)
+    const ramen = data.questions.find(element => element.id === id)
     const nextid = id + 1
     const theirAnswer = req.params.answer === 'a' ? 'a rock' : 'the rock'
     const viewData = { nextid }
-    if (question.answer === theirAnswer) {
-      res.render('right', viewData)
+    console.log()
+    if (data.answer === theirAnswer) {
+      const showInfo = {
+        fact1: req.body.fact,
+        image1: req.body.image
+      }
+      res.render('right', showInfo)
     } else {
-      res.render('wrong', viewData)
+      const showInfo = {
+        fact0: req.body.fact,
+        image0: req.body.image
+      }
+      res.render('wrong', showInfo)
     }
   })
 })
