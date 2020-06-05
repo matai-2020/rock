@@ -11,14 +11,23 @@ h1 {
   text-align: center;
 }
 
-h2,h3,h4,h5,h6 {
- font-size: 6em;
-  color: 		#05cbc5;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
+h2 {
+  color: 	#05cbc5;
+  font-size: 8em;
+  text-align: center;
+}
+
+h3 {
+  color: 	#05cbc5;
+  font-size: 6em;
+  text-align: center;
+}
+
+
+h4 {
+  color: 	#05cbc5;
+  font-size: 3em;
+  text-align: center;
 }
 
 a {
@@ -32,6 +41,18 @@ a {
 a:hover {
   background-color: #2a364a;
 }
+
+h5,h6 {
+ font-size: 6em;
+  color: 		#05cbc5;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+
 
 
 
